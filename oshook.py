@@ -34,8 +34,8 @@ def send_discord_webhook(webhook_url):
     # Embedding
     embed = {
         "color": 0xfff,
-        "author": {"name": "System Information", "icon_url": "https://www.pngall.com/wp-content/uploads/2/Windows-Logo.png"},
-        "thumbnail": {"url": "https://www.pngall.com/wp-content/uploads/2/Windows-Logo.png"},
+        "author": {"name": "System Information", "icon_url": "https://www.pngall.com/wp-content/uploads/2/Windows-Logo.png"}, # Replacable Image
+        "thumbnail": {"url": "https://www.pngall.com/wp-content/uploads/2/Windows-Logo.png"}, # Replacable Image
         "fields": [
             {"name": "Computer Name", "value": computer_name, "inline": True},
             {"name": "Current Time", "value": current_time, "inline": True},
@@ -68,5 +68,5 @@ def send_discord_webhook(webhook_url):
         print(f"Failed to send webhook. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    webhook_url = 'https://discord.com/api/webhooks/1232383567720480780/LLg0QP4yZadG2M52Ih02ULNhZWTOa49beOfsqStE-PBC6e03AnNGgXw67T7c5aBB93lv' # Replace with Webhook URL
+    webhook_url = 'webhook_url_goes_here' # Replace with Webhook URL
     send_discord_webhook(webhook_url)
